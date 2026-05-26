@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0a0e0c"/>
-  <text x="32" y="46" text-anchor="middle" font-size="40" font-family="Georgia, serif" fill="#c8fa46">♔</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" rx="180" fill="#0D1411"/>
+  <g transform="translate(512,512)" fill="#C8FA46">
+    <rect x="-26" y="-400" width="52" height="170" rx="10"/>
+    <rect x="-90" y="-340" width="180" height="50" rx="10"/>
+    <circle cx="0" cy="-200" r="50"/>
+    <path d="M 0 -150 C -130 -150, -240 -100, -270 0 C -290 80, -280 160, -230 230 L 230 230 C 280 160, 290 80, 270 0 C 240 -100, 130 -150, 0 -150 Z"/>
+    <rect x="-250" y="240" width="500" height="50" rx="8"/>
+    <rect x="-300" y="305" width="600" height="65" rx="10"/>
+  </g>
 </svg>
