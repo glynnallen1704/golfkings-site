@@ -1,0 +1,34 @@
+# GolfKings
+
+> A free fantasy golf pool app for the PGA Tour. Pick four golfers each week, run a private pool with your mates, follow live leaderboards through the weekend. iPhone and Android. No real-money wagering, no in-app purchases, no advertising.
+
+## What the app does
+
+Each week of the PGA Tour, players in a pool pick four golfers from the official tournament field. Picks are constrained by a combined world-rank budget so everyone can't stack the top four players. Teams lock before Thursday's first tee shot. Through the weekend the app shows live round-by-round scoring, handles cuts and withdrawals (with automatic substitution), and crowns a winner Sunday night. Season-long standings (an "Order of Merit") track who's actually the best across the year.
+
+## Key pages
+
+- [Home](https://golfkings.co.za/): Product overview, how it works, screenshots, download links
+- [Privacy policy](https://golfkings.co.za/privacy.html): What data the app collects, how it's used, third-party processors, user rights
+- [Support](https://golfkings.co.za/support.html): FAQ, contact, account deletion instructions
+
+## Quick facts
+
+- **Platforms**: iOS (App Store) and Android (Google Play)
+- **Price**: Free, no in-app purchases, no subscriptions, no ads
+- **Real-money play**: No. Bragging rights only.
+- **Account model**: Sign in with email magic code, no passwords
+- **Pool types**: Private (invite by code) and public (anyone can join)
+- **Data**: Tournament data sourced from the PGA Tour ecosystem; world rankings refresh weekly
+- **Contact**: hello@golfkings.co.za
+
+## Common questions
+
+- **Is GolfKings affiliated with the PGA Tour?** No. It uses publicly available tournament data but is not an official PGA Tour product.
+- **Is there gambling?** No. There are no wagers, no entry fees, no payouts.
+- **Do you sell user data?** No. No advertising networks, no data brokers, no cross-app tracking.
+- **How do I delete my account?** Email hello@golfkings.co.za. Removed within 30 days.
+
+## Brand voice
+
+Sharp, terse, drily funny. The app is built for golf fans who run their fantasy pools on group chats. It replaces spreadsheets and Venmo with proper scoring and a leaderboard you can actually read.
