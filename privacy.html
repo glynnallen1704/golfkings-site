@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy · GolfKings</title>
+    <meta name="description" content="GolfKings privacy policy — what we collect, why, and how to delete your account." />
+    <meta name="theme-color" content="#0a0e0c" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="GolfKings home">
+        <span aria-hidden="true" class="wordmark__crown">♔</span>
+        <span class="wordmark__text">GolfKings</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Inside the app</a>
+        <a href="support.html">Support</a>
+        <a class="topnav__cta" href="index.html#get">Get the app</a>
+      </nav>
+    </header>
+
+    <main id="main" class="doc">
+      <a class="doc__back" href="index.html">← Back to home</a>
+      <h1>Privacy</h1>
+      <p class="doc__updated">Last updated · 2026-05-26</p>
+
+      <p>
+        This is the privacy policy for the GolfKings iOS and Android app
+        (bundle ID <strong>com.glynnallen1704.golfkings</strong>),
+        operated by Glynn Allen. Contact:
+        <a href="mailto:hello@golfkings.app">hello@golfkings.app</a>.
+      </p>
+      <p>
+        Plain-English version: we collect the minimum we need to run a
+        fantasy golf app, we don't sell or share your data for advertising,
+        and you can delete your account at any time by emailing the address
+        above.
+      </p>
+
+      <h2>What we collect</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Why</th>
+            <th>Linked to you?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email address</td>
+            <td>Sign-in via magic code; account recovery</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Display name and handle</td>
+            <td>Shown in pools and on leaderboards</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Avatar photo (optional, you upload it)</td>
+            <td>Shown next to your name</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Apple/Google push token</td>
+            <td>Sending push notifications you opt into</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Anonymous device identifier</td>
+            <td>App lifecycle analytics so we know which builds users are on</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Your picks, team history, pool memberships</td>
+            <td>Core app functionality</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Anonymous product-interaction events</td>
+            <td>Improving the app (which screens, which features, retention)</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Crash and performance diagnostics</td>
+            <td>Bug fixing</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        We do <strong>not</strong> collect: location, contacts, health,
+        financial information, payment information, browsing history outside
+        the app, advertising identifiers, or anything used for cross-app
+        tracking.
+      </p>
+
+      <h2>Third-party services we use</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>What it does</th>
+            <th>Data it sees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>InstantDB</strong></td>
+            <td>Database + sync for accounts, pools, picks, scores</td>
+            <td>Everything in the "Linked to you" rows above</td>
+          </tr>
+          <tr>
+            <td><strong>Sanity</strong></td>
+            <td>Content management for in-app news articles</td>
+            <td>None of your data — articles are read from your device</td>
+          </tr>
+          <tr>
+            <td><strong>Slash Golf</strong> (RapidAPI)</td>
+            <td>Tournament schedules, fields, live scores, world rankings</td>
+            <td>None of your data — server-side only</td>
+          </tr>
+          <tr>
+            <td><strong>PostHog</strong> (US-region cloud)</td>
+            <td>Product analytics — which screens are used, which actions are taken</td>
+            <td>A pseudonymous user ID, your email, and interaction events. No payment info, no contacts, no location.</td>
+          </tr>
+          <tr>
+            <td><strong>Expo / EAS</strong></td>
+            <td>Build infrastructure and push notification delivery</td>
+            <td>Push tokens for notification routing</td>
+          </tr>
+          <tr>
+            <td><strong>Unsplash</strong></td>
+            <td>Cover images on news articles</td>
+            <td>None of your data</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        We do <strong>not</strong> use advertising networks, marketing trackers,
+        or sell data to third parties.
+      </p>
+
+      <h2>Push notifications</h2>
+      <p>
+        You can toggle each push category on/off independently from
+        <strong>Profile → Notifications</strong> inside the app. Default is on
+        for scoring-related alerts (team live, withdrawals, top-three climbs,
+        final results) and off for editorial content (articles, OWGR shifts,
+        field announcements).
+      </p>
+
+      <h2>How long we keep your data</h2>
+      <p>
+        For as long as you have an account. If you ask us to delete your
+        account (email
+        <a href="mailto:hello@golfkings.app">hello@golfkings.app</a>), we
+        remove your profile, picks, pool memberships, push tokens, and
+        analytics identifiers within 30 days. Aggregated and anonymised
+        analytics may persist beyond that.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        GolfKings is rated 4+ but is not directed at children under 13. We
+        don't knowingly collect data from anyone under 13. If you believe a
+        child has signed up, email us and we'll delete the account.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        We may update this policy when the app changes. Material changes will
+        be flagged in the app or via email to your registered address. The
+        "Last updated" date at the top tracks the most recent revision.
+      </p>
+
+      <h2>Your rights</h2>
+      <ul>
+        <li>
+          <strong>Access</strong> the data we have on you — email
+          <a href="mailto:hello@golfkings.app">hello@golfkings.app</a>.
+        </li>
+        <li>
+          <strong>Delete</strong> your account and associated data — same
+          inbox.
+        </li>
+        <li>
+          <strong>Opt out</strong> of push notifications at any time —
+          Profile → Notifications inside the app.
+        </li>
+        <li>
+          <strong>Disable analytics</strong> by signing out — we don't
+          analytics-track anonymous (signed-out) users beyond crash
+          diagnostics.
+        </li>
+      </ul>
+      <p>
+        GolfKings has no real-money wagering, in-app purchases, or
+        subscriptions. We don't take payment information.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Anything else,
+        <a href="mailto:hello@golfkings.app">hello@golfkings.app</a>.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <div>
+          <p class="footer__mark"><span aria-hidden="true">♔</span> GolfKings</p>
+          <p class="footer__line">Fantasy golf, finally done right.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:hello@golfkings.app">Email</a>
+        </nav>
+      </div>
+      <div class="footer__meta">
+        <span class="footer__bundle">com.glynnallen1704.golfkings</span>
+        <span>© 2026 GolfKings · No real money</span>
+      </div>
+    </footer>
+  </body>
+</html>

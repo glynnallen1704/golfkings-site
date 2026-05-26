@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GolfKings — Fantasy golf with your mates</title>
+    <meta
+      name="description"
+      content="Pick four PGA Tour golfers. Run a private pool with your mates. Follow every round live. No spreadsheets, no Venmo, no real money — just fantasy golf done right."
+    />
+    <meta property="og:title" content="GolfKings — Fantasy golf with your mates" />
+    <meta
+      property="og:description"
+      content="Pick four golfers. Lock your team before Thursday. The lowest combined score wins the week."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0a0e0c" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="GolfKings home">
+        <span aria-hidden="true" class="wordmark__crown">♔</span>
+        <span class="wordmark__text">GolfKings</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Inside the app</a>
+        <a href="#privacy">No real money</a>
+        <a class="topnav__cta" href="#get">Get the app</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-headline">
+        <div class="hero__bar">
+          <span class="kicker">Now in private TestFlight · v1.0.1</span>
+          <span class="kicker kicker--mono">PGA Tour · 2026</span>
+        </div>
+        <h1 id="hero-headline" class="hero__title">
+          <span class="reveal" style="--d:60ms">Fantasy golf,</span>
+          <span class="reveal hero__title--italic" style="--d:140ms"><em>finally</em> done right.</span>
+        </h1>
+        <p class="hero__lede reveal" style="--d:260ms">
+          Pick four golfers. Lock your team before Thursday's first tee shot.
+          Lowest combined score wins the week. No spreadsheets, no Venmo,
+          no real money — just bragging rights and the group chat.
+        </p>
+        <div class="hero__cta reveal" style="--d:360ms">
+          <a class="btn btn--brand" href="#get">
+            <span>Get the app</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#how">How it works</a>
+        </div>
+
+        <!-- Faux live scoreboard panel -->
+        <div class="board reveal" style="--d:520ms" aria-label="A glimpse of the in-app pool leaderboard">
+          <div class="board__head">
+            <div>
+              <p class="board__eyebrow">YOUR POOL · 6 RUMBLER CLUB</p>
+              <p class="board__title">Charles Schwab Challenge</p>
+            </div>
+            <span class="board__live"><span class="board__dot"></span>Round 1 · Thu</span>
+          </div>
+          <ol class="board__list" role="list">
+            <li class="board__row board__row--lead">
+              <span class="board__rank">1</span>
+              <span class="board__name">Quinni Nel</span>
+              <span class="board__handle">@quinni-nel</span>
+              <span class="board__score">−7</span>
+            </li>
+            <li class="board__row">
+              <span class="board__rank">2</span>
+              <span class="board__name">Steve Phillips</span>
+              <span class="board__handle">@steve-phillips</span>
+              <span class="board__score">−4</span>
+            </li>
+            <li class="board__row board__row--you">
+              <span class="board__rank">T3</span>
+              <span class="board__name">You</span>
+              <span class="board__handle">@glynn</span>
+              <span class="board__score">−3</span>
+            </li>
+            <li class="board__row">
+              <span class="board__rank">T3</span>
+              <span class="board__name">Mj Calder</span>
+              <span class="board__handle">@mj-calder</span>
+              <span class="board__score">−3</span>
+            </li>
+            <li class="board__row">
+              <span class="board__rank">5</span>
+              <span class="board__name">Robin Saggers</span>
+              <span class="board__handle">@robin-saggers</span>
+              <span class="board__score">−2</span>
+            </li>
+          </ol>
+          <p class="board__footer">17 teams · Live scoring · Auto-substitution on withdrawals</p>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="how" id="how" aria-labelledby="how-title">
+        <p class="kicker">01 / 04 — How it works</p>
+        <h2 class="section-title" id="how-title">
+          Four golfers. <em>One pool.</em> Every Thursday.
+        </h2>
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Run a pool</h3>
+            <p class="step__body">Create a private pool. Share the join code with your group chat. Or join a public one and play strangers if you must.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Pick four</h3>
+            <p class="step__body">Each PGA Tour week, pick four golfers from the field. World-rank budget keeps it fair — no four-Schefflers teams.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Lock the team</h3>
+            <p class="step__body">Before Thursday's first tee shot, lock it in. After that it's set — your team is what you brought to the dance.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Follow live</h3>
+            <p class="step__body">Real leaderboards. Real cuts. Real auto-substitution when someone WDs. Lowest combined score Sunday night wins the week.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Pull quote -->
+      <section class="quote" aria-label="What this replaces">
+        <p class="quote__text">
+          We built this because we got tired of running our Sunday pool on a
+          <span class="quote__strike">spreadsheet</span>.
+        </p>
+        <p class="quote__attrib">— Pretty much every group chat, every Monday</p>
+      </section>
+
+      <!-- Features -->
+      <section class="features" id="features" aria-labelledby="features-title">
+        <p class="kicker">02 / 04 — Inside the app</p>
+        <h2 class="section-title" id="features-title">
+          Everything a pool needs.
+          <span class="section-title__muted">Nothing it doesn't.</span>
+        </h2>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Live leaderboards</h3>
+            <p>Round-by-round scoring pulled straight from the tour. Cuts, withdrawals, and final positions update through the weekend.</p>
+          </article>
+          <article class="feature">
+            <h3>Season-long standings</h3>
+            <p>Your Order of Merit across every PGA Tour event. Find out who's actually the best at this — and who just got lucky once.</p>
+          </article>
+          <article class="feature">
+            <h3>Auto-substitution</h3>
+            <p>Pick gets injured? Misses the cut? The app subs in the worst made-cut score of the day so your weekend isn't ruined.</p>
+          </article>
+          <article class="feature">
+            <h3>Private pools</h3>
+            <p>Invite-only by default. Share a join code with the group chat. Your pool, your golfers, your bragging rights.</p>
+          </article>
+          <article class="feature">
+            <h3>Push when it matters</h3>
+            <p>Team locked. Withdrawal alert. Top-three climb. Final results. Every notification is opt-in, opt-out, your call.</p>
+          </article>
+          <article class="feature">
+            <h3>News, kept short</h3>
+            <p>An editorial News tab covers tournament results, OWGR shifts, and major previews. Written like a column, not a press release.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Trust block -->
+      <section class="trust" id="privacy" aria-labelledby="trust-title">
+        <p class="kicker">03 / 04 — The deal</p>
+        <h2 class="section-title" id="trust-title">No money.<br/> <em>No tracking.</em> <br/> No catch.</h2>
+        <div class="trust__grid">
+          <div class="trust__cell">
+            <p class="trust__lead">$0.00</p>
+            <p class="trust__body">No real money, no entry fees, no payouts. No card on file because there's nothing to charge.</p>
+          </div>
+          <div class="trust__cell">
+            <p class="trust__lead">Zero ads</p>
+            <p class="trust__body">No advertising SDKs. No third-party trackers. We use one analytics tool to fix bugs faster, and you can read what it sees on the <a href="privacy.html">privacy page</a>.</p>
+          </div>
+          <div class="trust__cell">
+            <p class="trust__lead">Email a human</p>
+            <p class="trust__body">Need an account deleted, a pool unstuck, anything else — <a href="mailto:hello@golfkings.app">hello@golfkings.app</a>. It comes to a real inbox.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get the app -->
+      <section class="get" id="get" aria-labelledby="get-title">
+        <p class="kicker">04 / 04 — Get the app</p>
+        <h2 class="section-title" id="get-title">Open the season properly.</h2>
+        <p class="get__body">
+          GolfKings is in private TestFlight ahead of the App Store launch.
+          If you want in early, drop us a line — we'll add you to the next round of invites.
+        </p>
+        <div class="get__actions">
+          <a class="btn btn--brand btn--lg" href="mailto:hello@golfkings.app?subject=TestFlight%20invite">
+            <span>Email for TestFlight</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <span class="badge-soon" aria-label="App Store coming soon">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14" fill="currentColor"><path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.04-.05-.21-.05-.4 0-1.18.6-2.27 1.2-2.96.74-.85 1.98-1.5 3.02-1.55.04.13.06.27.06.4.23 0 .23 0 .23 0zm-3.61 7.34c1.74 0 2.49 1.13 3.49 1.13.93 0 1.94-1.13 3.45-1.13 1.32 0 2.79.72 3.85 1.94-3.4 1.86-2.85 6.71.79 7.74-1 2.13-2.06 4.26-3.67 4.29-1.55.04-2.05-1.01-3.83-1.01-1.79 0-2.34 1-3.81 1.05-1.6.05-2.82-2.31-3.83-4.43-2.09-4.31-2.36-11.34 2.59-12.04 1.46-.04 2.83 1.03 3 1.03z"/></svg>
+            App Store · Coming soon
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <div>
+          <p class="footer__mark">
+            <span aria-hidden="true">♔</span> GolfKings
+          </p>
+          <p class="footer__line">Fantasy golf, finally done right.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:hello@golfkings.app">Email</a>
+        </nav>
+      </div>
+      <div class="footer__meta">
+        <span class="footer__bundle">com.glynnallen1704.golfkings</span>
+        <span>© 2026 GolfKings · No real money · No real chance of breaking even on the time spent</span>
+      </div>
+    </footer>
+  </body>
+</html>

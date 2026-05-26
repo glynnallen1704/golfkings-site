@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support · GolfKings</title>
+    <meta name="description" content="GolfKings support — how to get help, common questions, and how to reach a real person." />
+    <meta name="theme-color" content="#0a0e0c" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="GolfKings home">
+        <span aria-hidden="true" class="wordmark__crown">♔</span>
+        <span class="wordmark__text">GolfKings</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Inside the app</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="topnav__cta" href="index.html#get">Get the app</a>
+      </nav>
+    </header>
+
+    <main id="main" class="doc">
+      <a class="doc__back" href="index.html">← Back to home</a>
+      <h1>Support</h1>
+      <p class="doc__updated">If in doubt — hello@golfkings.app</p>
+
+      <p>
+        GolfKings is built by one person. Email
+        <a href="mailto:hello@golfkings.app">hello@golfkings.app</a> with
+        anything — accounts, pools, picks, bugs, feature requests. Replies
+        usually within a day, faster on weekends because that's when the
+        golf is on.
+      </p>
+
+      <h2>How to delete your account</h2>
+      <p>
+        Email
+        <a href="mailto:hello@golfkings.app?subject=Delete%20my%20account">hello@golfkings.app</a>
+        from the address you signed up with. We remove your profile, picks,
+        pool memberships, push tokens, and analytics identifiers within
+        30 days. No questions asked.
+      </p>
+
+      <h2>The app crashed</h2>
+      <p>
+        Sorry. Two things help:
+      </p>
+      <ol>
+        <li>Reopen — we ship over-the-air bug fixes regularly, and a fresh launch picks them up.</li>
+        <li>
+          Email
+          <a href="mailto:hello@golfkings.app?subject=Crash">hello@golfkings.app</a>
+          with what you were doing when it crashed and your iPhone/Android
+          model. Crash reports come through Expo so if you sent one, it
+          probably already landed.
+        </li>
+      </ol>
+
+      <h2>Common questions</h2>
+
+      <h2 style="font-size: 19px; margin-top: 32px">Why can't I pick four world-#1s?</h2>
+      <p>
+        Every team has a combined world-rank target of ≥ 100. Four #1s would
+        be a combined rank of 4 — well under the target. The constraint
+        forces real choices instead of "everyone picks Scheffler."
+      </p>
+
+      <h2 style="font-size: 19px; margin-top: 32px">One of my golfers withdrew. What happens?</h2>
+      <p>
+        Your team continues with three live golfers + a substitution. For
+        round-three or round-four substitutions, we use the worst made-cut
+        score of the day in their slot. R1/R2 withdrawals leave the slot
+        empty and you take the points hit — pick again next week.
+      </p>
+
+      <h2 style="font-size: 19px; margin-top: 32px">How does scoring work?</h2>
+      <p>
+        R1 + R2 sum all four players. R3 and R4 use the best three of four —
+        the worst score that day is dropped. Lowest combined four-round
+        total wins the week.
+      </p>
+
+      <h2 style="font-size: 19px; margin-top: 32px">Where are the in-app purchases?</h2>
+      <p>
+        There aren't any. No subscriptions, no premium tier, no ads, no
+        microtransactions. The app is free because we're not trying to
+        monetise it — we just wanted to stop running our Sunday pool on a
+        spreadsheet.
+      </p>
+
+      <h2 style="font-size: 19px; margin-top: 32px">Why is my golfer's rank weird?</h2>
+      <p>
+        World ranks update Mondays at 07:00 UTC, sourced from OWGR. Lock-time
+        ranks (what you see on a locked team) are frozen — your team shows
+        the world ranks at the moment you locked picks, not whatever they
+        have drifted to since.
+      </p>
+
+      <h2 style="font-size: 19px; margin-top: 32px">Can I host a pool with people on Android and iOS?</h2>
+      <p>
+        Yes. The app is the same on both platforms; data syncs through
+        InstantDB the moment a member joins.
+      </p>
+
+      <h2>Still stuck</h2>
+      <p>
+        <a href="mailto:hello@golfkings.app">hello@golfkings.app</a> — it's
+        a real inbox.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <div>
+          <p class="footer__mark"><span aria-hidden="true">♔</span> GolfKings</p>
+          <p class="footer__line">Fantasy golf, finally done right.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="mailto:hello@golfkings.app">Email</a>
+        </nav>
+      </div>
+      <div class="footer__meta">
+        <span class="footer__bundle">com.glynnallen1704.golfkings</span>
+        <span>© 2026 GolfKings · No real money</span>
+      </div>
+    </footer>
+  </body>
+</html>
