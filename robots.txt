@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://golfkings.co.za/sitemap.xml
