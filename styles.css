@@ -272,16 +272,6 @@ button {
   );
   z-index: -1;
 }
-.hero__bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  max-width: 1180px;
-  margin: 0 auto 36px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--line);
-}
 .hero__title {
   max-width: 1180px;
   margin: 0 auto;
