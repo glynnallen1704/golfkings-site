@@ -969,6 +969,217 @@ button {
   }
 }
 
+/* ──────────────── Versus / comparison page ──────────────── */
+.vs-hero {
+  padding: clamp(48px, 9vw, 120px) var(--pad-x) clamp(40px, 6vw, 80px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.vs-hero__title {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(40px, 7vw, 96px);
+  line-height: 0.96;
+  letter-spacing: -0.022em;
+  margin: 12px 0 0;
+}
+.vs-hero__title span {
+  display: block;
+}
+.vs-hero__title--italic em {
+  font-style: italic;
+  color: var(--brand);
+  padding-right: 0.08em;
+}
+.vs-hero__lede {
+  margin: clamp(24px, 4vw, 44px) 0 0;
+  max-width: 64ch;
+  font-size: clamp(16px, 1.5vw, 19px);
+  color: var(--text-mid);
+}
+.vs-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+/* Comparison table */
+.vs-table-wrap {
+  padding: clamp(60px, 9vw, 120px) var(--pad-x);
+  border-top: 1px solid var(--line);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.vs-intro {
+  margin: 20px 0 clamp(32px, 5vw, 56px);
+  color: var(--text-mid);
+  font-size: clamp(15px, 1.4vw, 18px);
+  max-width: 56ch;
+}
+.vs-table {
+  display: grid;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--rad-md);
+  overflow: hidden;
+  background: var(--surface);
+}
+.vs-table__head {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+  border-bottom: 1px solid var(--line-strong);
+}
+.vs-table__head > * {
+  background: var(--bg-deep);
+  padding: 16px clamp(12px, 1.6vw, 22px);
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+.vs-table__head .vs-table__us {
+  color: var(--brand);
+  font-weight: 700;
+}
+.vs-table__head .vs-table__them {
+  color: var(--text-lo);
+}
+.vs-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+}
+.vs-row > * {
+  background: var(--surface);
+  padding: clamp(14px, 1.8vw, 20px) clamp(12px, 1.6vw, 22px);
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text-mid);
+}
+.vs-row:hover > * {
+  background: var(--surface-2);
+}
+.vs-row__label {
+  font-family: var(--f-sans);
+  font-weight: 600;
+  color: var(--text-hi);
+}
+.vs-row__us {
+  color: var(--text-hi);
+  border-left: 2px solid var(--brand);
+}
+.vs-row__us strong {
+  color: var(--brand);
+}
+.vs-row__them {
+  color: var(--text-mid);
+}
+@media (max-width: 720px) {
+  .vs-table__head,
+  .vs-row {
+    grid-template-columns: 1fr;
+  }
+  .vs-table__head > * {
+    padding: 8px 16px;
+  }
+  .vs-row {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .vs-row > * {
+    padding: 6px 16px;
+  }
+  .vs-row__label {
+    padding-top: 14px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-mid);
+    font-family: var(--f-mono);
+  }
+  .vs-row__us {
+    border-left: 0;
+    border-top: 2px solid var(--brand);
+  }
+}
+.vs-footnote {
+  margin: clamp(24px, 3vw, 36px) 0 0;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-lo);
+}
+.vs-footnote a {
+  color: var(--text-mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--brand);
+}
+
+.vs-why {
+  padding: clamp(60px, 9vw, 120px) var(--pad-x);
+  border-top: 1px solid var(--line);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.vs-why__body {
+  margin: 20px 0 0;
+  color: var(--text-mid);
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
+}
+
+.vs-faq {
+  padding: clamp(60px, 9vw, 120px) var(--pad-x);
+  border-top: 1px solid var(--line);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.vs-faq__item {
+  padding: clamp(20px, 3vw, 28px) 0;
+  border-bottom: 1px solid var(--line);
+}
+.vs-faq__item:last-of-type {
+  border-bottom: none;
+}
+.vs-faq__item h3 {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(22px, 2.4vw, 28px);
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+  color: var(--text-hi);
+}
+.vs-faq__item p {
+  margin: 0;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+.vs-final {
+  padding: clamp(60px, 9vw, 120px) var(--pad-x);
+  border-top: 1px solid var(--line);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.vs-final__body {
+  margin: 24px 0 0;
+  color: var(--text-mid);
+  max-width: 52ch;
+  font-size: clamp(16px, 1.5vw, 19px);
+}
+.vs-final__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}
+
 /* ──────────────── Selection ──────────────── */
 ::selection {
   background: var(--brand);
