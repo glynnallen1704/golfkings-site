@@ -21,11 +21,11 @@
   --text-mid: rgba(245, 244, 236, 0.7);
   --text-lo: rgba(245, 244, 236, 0.46);
 
-  /* Type */
-  --f-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
-  --f-sans: "Bricolage Grotesque", "Hanken Grotesk", "Helvetica Neue", system-ui,
-    sans-serif;
-  --f-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;
+  /* Type — single geometric sans (Revolut/Linear/Stripe-style), JetBrains
+     Mono only where numbers need to line up. No editorial serif. */
+  --f-display: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --f-sans: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --f-body: "Inter", "Helvetica Neue", system-ui, sans-serif;
   --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
 
   /* Rhythm */
@@ -216,15 +216,17 @@ button {
 /* ──────────────── Section title pattern ──────────────── */
 .section-title {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 600;
   font-size: clamp(40px, 6.4vw, 88px);
-  line-height: 0.98;
-  letter-spacing: -0.02em;
+  line-height: 1;
+  letter-spacing: -0.035em;
   margin: 16px 0 0 0;
   max-width: 22ch;
 }
 .section-title em {
-  font-style: italic;
+  /* Drop the editorial italic — use brand color for emphasis instead */
+  font-style: normal;
+  color: var(--brand);
 }
 .section-title__muted {
   color: var(--text-lo);
@@ -284,19 +286,18 @@ button {
   max-width: 1180px;
   margin: 0 auto;
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(56px, 11vw, 168px);
-  line-height: 0.92;
-  letter-spacing: -0.025em;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
 }
 .hero__title span {
   display: block;
 }
 .hero__title--italic em {
-  font-style: italic;
+  /* Drop italic; brand color carries the emphasis */
+  font-style: normal;
   color: var(--brand);
-  /* Italic Instrument Serif extends below baseline; nudge so it doesn't clip */
-  padding-right: 0.08em;
 }
 .hero__lede {
   margin: clamp(28px, 4vw, 52px) auto 0;
@@ -495,9 +496,9 @@ button {
 }
 .step__title {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 600;
   font-size: clamp(28px, 3.2vw, 40px);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   margin: 14px 0 10px;
 }
 .step__body {
@@ -516,11 +517,10 @@ button {
 }
 .quote__text {
   font-family: var(--f-display);
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(32px, 5.4vw, 64px);
-  line-height: 1.05;
-  letter-spacing: -0.015em;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   max-width: 22ch;
   margin: 0 auto;
 }
@@ -622,9 +622,9 @@ button {
 }
 .trust__lead {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 600;
   font-size: clamp(36px, 4.8vw, 56px);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.035em;
   line-height: 1;
   margin: 0 0 12px;
 }
@@ -703,7 +703,6 @@ button {
 .footer__line {
   margin: 6px 0 0;
   font-family: var(--f-display);
-  font-style: italic;
   color: var(--text-mid);
   font-size: 18px;
 }
@@ -762,10 +761,10 @@ button {
 }
 .doc h1 {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(40px, 6vw, 64px);
   line-height: 1;
-  letter-spacing: -0.022em;
+  letter-spacing: -0.035em;
   margin: 0 0 12px;
 }
 .doc__updated {
@@ -945,8 +944,8 @@ button {
 .phone figcaption {
   margin-top: 14px;
   font-family: var(--f-display);
-  font-style: italic;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
   color: var(--text-mid);
   text-align: center;
 }
@@ -977,19 +976,19 @@ button {
 }
 .vs-hero__title {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(40px, 7vw, 96px);
-  line-height: 0.96;
-  letter-spacing: -0.022em;
+  line-height: 1;
+  letter-spacing: -0.04em;
   margin: 12px 0 0;
 }
 .vs-hero__title span {
   display: block;
 }
 .vs-hero__title--italic em {
-  font-style: italic;
+  /* Drop italic; brand color carries the emphasis */
+  font-style: normal;
   color: var(--brand);
-  padding-right: 0.08em;
 }
 .vs-hero__lede {
   margin: clamp(24px, 4vw, 44px) 0 0;
@@ -1148,9 +1147,9 @@ button {
 }
 .vs-faq__item h3 {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 600;
   font-size: clamp(22px, 2.4vw, 28px);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   margin: 0 0 10px;
   color: var(--text-hi);
 }
