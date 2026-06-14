@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join a GolfKings pool</title>
+    <meta name="description" content="Open this link on your phone to join the GolfKings fantasy golf pool you were invited to." />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="canonical" href="https://golfkings.co.za/join/" />
+    <meta name="theme-color" content="#0a0e0c" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0e0c;
+        --surface: #131817;
+        --text: #f4f6f5;
+        --text-mid: #9aa39e;
+        --accent: #c8fa46;
+        --accent-text: #0a0e0c;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Inter', system-ui, sans-serif;
+        min-height: 100vh;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+      }
+      .card {
+        background: var(--surface);
+        padding: 32px 24px;
+        border-radius: 20px;
+        max-width: 420px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        margin: 0 0 12px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        color: var(--text-mid);
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0 0 24px;
+      }
+      .code {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        background: rgba(255,255,255,0.06);
+        padding: 16px 24px;
+        border-radius: 12px;
+        display: inline-block;
+        margin: 0 0 24px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        background: var(--accent);
+        color: var(--accent-text);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 999px;
+        margin: 6px 0;
+        transition: transform 0.1s;
+      }
+      .btn:active { transform: scale(0.97); }
+      .btn-secondary {
+        background: transparent;
+        color: var(--text-mid);
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+      .hidden { display: none; }
+      .small {
+        font-size: 13px;
+        color: var(--text-mid);
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Join the pool</h1>
+      <p id="intro">Opening GolfKings on your phone…</p>
+      <div class="code" id="code-display">------</div>
+      <p id="fallback-msg" class="hidden">
+        Didn't open the app? Tap below to install GolfKings, then enter the code above.
+      </p>
+      <a class="btn" id="open-app" href="#">Open in GolfKings</a>
+      <br />
+      <a class="btn btn-secondary hidden" id="appstore" href="https://apps.apple.com/app/id6770234396">
+        Get GolfKings on the App Store
+      </a>
+      <p class="small">Pool join codes expire when the pool host removes them.</p>
+    </div>
+
+    <script>
+      (function () {
+        // Pull the code from either /join/<CODE> path or ?code=<CODE> query.
+        var pathParts = window.location.pathname.split('/').filter(Boolean);
+        var code = pathParts.length > 1 ? pathParts[1] : (new URLSearchParams(window.location.search)).get('code');
+        if (!code) code = '';
+        code = code.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6);
+
+        var codeDisplay = document.getElementById('code-display');
+        var openLink = document.getElementById('open-app');
+        var appstore = document.getElementById('appstore');
+        var fallback = document.getElementById('fallback-msg');
+        var intro = document.getElementById('intro');
+
+        if (code.length === 6) {
+          codeDisplay.textContent = code;
+          var deepLink = 'golfkings://join/' + code;
+          openLink.href = deepLink;
+
+          // Attempt to open the app immediately.
+          window.location.href = deepLink;
+
+          // If we're still here after 1.5s, the app didn't catch the link.
+          setTimeout(function () {
+            intro.textContent = "Code ready — install GolfKings to join.";
+            fallback.classList.remove('hidden');
+            appstore.classList.remove('hidden');
+          }, 1500);
+        } else {
+          codeDisplay.textContent = 'NO CODE';
+          intro.textContent = "We couldn't read the join code from this link.";
+          openLink.classList.add('hidden');
+          appstore.classList.remove('hidden');
+        }
+      })();
+    </script>
+  </body>
+</html>
